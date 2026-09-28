@@ -810,6 +810,9 @@
       "spec": {
         "path": "../javapurs-spec"
       },
+      "spec-discovery": {
+        "path": "../javapurs-spec-discovery"
+      },
       "st": {
         "path": "../javapurs-st"
       },
@@ -860,7 +863,11 @@
     "assert": {
       "type": "local",
       "path": "../javapurs-assert",
-      "dependencies": []
+      "dependencies": [
+        "console",
+        "effect",
+        "prelude"
+      ]
     },
     "bifunctors": {
       "type": "registry",
@@ -1106,6 +1113,7 @@
       "dependencies": [
         "control",
         "foldable-traversable",
+        "invariant",
         "prelude"
       ]
     },
